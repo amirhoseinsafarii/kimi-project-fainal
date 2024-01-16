@@ -1,0 +1,61 @@
+.Lorem2 {
+    background-color: #f1f1f1;
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    text-align: right;
+}
+
+.Lorem2 img {
+    height: 65%;
+    aspect-ratio: 2;
+}
+
+@media only screen and (max-width: 700px) {
+    .Lorem2 {
+        height: 50%;
+    }
+
+    .Lorem2 img {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Lorem2 h2 {
+        font-size: 20px;
+    }
+
+    .Lorem2 p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .Lorem2 {
+        height: 40%;
+    }
+    .Lorem2 p {
+        font-size: 12px;
+    }
+
+    .Lorem2 img {
+        height: 65%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .Lorem2 p {
+        font-size: 10px;
+    }
+
+    .Lorem2 img {
+        height: 60%;
+    }
+}
