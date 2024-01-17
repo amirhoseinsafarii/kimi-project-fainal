@@ -1,0 +1,13 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  direction: rtl;
+}
+
+.navItem {
+  margin-inline: 20px;
+  padding-top: 40px;
+  cursor: pointer;
+}
