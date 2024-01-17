@@ -1,0 +1,79 @@
+.header {
+  width: 100%;
+  height: 419px;
+  box-sizing: border-box;
+  background-image: url("../../../assets/images/photo_2023-09-07_20-01-07\ 1.svg");
+}
+
+.headertext {
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+  padding-top: 180px;
+  padding-left: 70%;
+}
+
+p {
+  color: #555;
+  text-align: right;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.imgSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+h4 {
+  color: #dbdbdb;
+  text-align: right;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 25%;
+  width: 700px;
+}
+
+h2 {
+  color: #dbdbdb;
+  text-align: right;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-right: 25%;
+}
+
+.cbutton {
+  border-radius: 15px;
+  background: #dbdbdb;
+  color: #4f9468;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 250px;
+  height: 78px;
+  margin-top: 100px;
+}

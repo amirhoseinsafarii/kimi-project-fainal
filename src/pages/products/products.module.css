@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  height: 419px;
+  box-sizing: border-box;
+  background-image: url("../../assets/images/photo_2023-09-07_20-01-07\ 1.svg");
+}
+
+.headertext {
+  width: 100%;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  text-decoration: underline;
+  padding-top: 180px;
+  padding-left: 70%;
+}
+
+.p {
+  color: #3f3f3f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 100px;
+}
+
+.productSecrion {
+  direction: rtl;
+  display: flex;
+
+  width: 100%;
+}
+
+.pimg {
+  width: 100%;
+}
+
+.producttext {
+  padding-top: 100px;
+}
+
+.ptext1 {
+  color: #3f3f3f;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 600px;
+}
+
+.ptext2 {
+  color: #3f3f3f;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 600px;
+}
+
+.cbutton {
+  border-radius: 15px;
+  background: #4f9468;
+  width: 306px;
+  height: 116px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+a {
+  all: unset;
+  width: 40%;
+  padding-top: 150px;
+}
