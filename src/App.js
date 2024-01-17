@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+
+
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar.component";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
       <Footer />
     </>
   );
+
 }
 
 export default App;
