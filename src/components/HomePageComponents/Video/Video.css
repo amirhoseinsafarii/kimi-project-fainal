@@ -1,0 +1,72 @@
+.video {
+    background-color: #f1f1f1;
+    height: 510px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+    text-align: right;
+}
+
+.video .video-div {
+    height: 65%;
+    aspect-ratio: 2;
+    background-color: black;
+    content: "video";
+}
+
+.video-div source {
+    height: 100%;
+    width: 100%;
+}
+
+.video p {
+    height: fit-content;
+}
+
+@media only screen and (max-width: 700px) {
+    .video {
+        height: 50%;
+    }
+
+    .video .video-div {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .video h2 {
+        font-size: 20px;
+    }
+
+    .video p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .video {
+        height: 40%;
+    }
+    .video p {
+        font-size: 12px;
+    }
+
+    .video .video-div {
+        height: 65%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .video p {
+        font-size: 10px;
+    }
+
+    .video .video-div {
+        height: 55%;
+    }
+}

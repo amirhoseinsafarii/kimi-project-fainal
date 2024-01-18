@@ -1,15 +1,30 @@
 .container {
-  width: 100%;
-  height: 689px;
-  background-color: #525151;
-  margin-top: 100px;
-  direction: rtl;
+    width: 100%;
+    /* height: 689px; */
+    height: fit-content;
+    background-color: #525151;
+    margin-top: 100px;
+    direction: rtl;
 }
 
 .footerItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 300px;
-  text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .container > div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 800px;
+        padding-right: 20px;
+    }
+
+    .footerItem {
+        height: 250px;
+    }
 }

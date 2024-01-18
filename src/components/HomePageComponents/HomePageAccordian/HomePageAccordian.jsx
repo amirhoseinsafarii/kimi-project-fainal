@@ -46,12 +46,16 @@ function HomePageAccordian() {
                     <div className="accordians-sidebar">
                         <h3>لورم ایپسوم </h3>
                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                        <div>kimiagostarsoil</div>
+                        <a href="">
+                            <div>kimiagostarsoil</div>
+                        </a>
                     </div>
                     <div className="accordians-sidebar">
                         <h3>لورم ایپسوم </h3>
                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                        <div>تماس بگیرید</div>
+                        <a href="">
+                            <div>تماس بگیرید</div>
+                        </a>
                     </div>
                 </div>
                 <div className="accordians">
