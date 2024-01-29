@@ -19,11 +19,6 @@ const photosValue = [
         src: "./",
         alt: "image",
     },
-    {
-        index: 4,
-        src: "./",
-        alt: "image",
-    },
 ];
 
 console.log(photosValue);

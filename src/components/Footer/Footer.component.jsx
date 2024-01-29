@@ -198,13 +198,15 @@ function Footer() {
 
                 <div
                     style={{
-                        width: "80%",
-                        height: "3px",
-                        backgroundColor: "#4F9468",
-                        marginInline: "auto",
+                        width: "100%",
+                        height: "40px",
                         marginTop: "20px",
+                        borderTop: "3px solid #4F9468",
+                        direction: "ltr",
                     }}
-                ></div>
+                >
+                    <div className={styles.social_medias_links}></div>
+                </div>
             </div>
         </>
     );

@@ -1,5 +1,5 @@
 import "./Video.css";
-import image from "../../../assets/images/Screenshot(101).png";
+import video from "../../../assets/images/capture video windows 10 - Google Search - Google Chrome 2024-01-18 04-58-07.mp4";
 function Video() {
     return (
         <div className="video">
@@ -9,13 +9,9 @@ function Video() {
                 استفاده از طراحان گرافیک است، چاپگرها و متون
             </p>
 
-            <video className="video-div" controls width="100%">
-                <source
-                    src="/../../../assets/images/capture video windows 10 - Google Search - Google Chrome 2024-01-18 04-58-07.mp4"
-                    type="video/mp4"
-                />
-                Sorry, your browser doesn't support videos.
-            </video>
+            <div className="div_video">
+                <video src={video} controls />
+            </div>
         </div>
     );
 }

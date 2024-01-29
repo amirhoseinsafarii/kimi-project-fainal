@@ -5,14 +5,13 @@ function Accordian({ accordianValue }) {
     let [openAccordian, setOpenAccordian] = useState(false);
     return (
         <div className="accordian">
-            <div className="accordian-header">
-                <span
-                    onClick={() => {
-                        setOpenAccordian(!openAccordian);
-                    }}
-                >
-                    {openAccordian ? "-" : "+"}
-                </span>
+            <div
+                onClick={() => {
+                    setOpenAccordian(!openAccordian);
+                }}
+                className="accordian-header"
+            >
+                <span>{openAccordian ? "-" : "+"}</span>
                 <p>{`${accordianValue.index}-${accordianValue.header}`}</p>
             </div>
             <div
