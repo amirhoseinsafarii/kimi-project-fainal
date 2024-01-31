@@ -21,7 +21,6 @@
     background-color: white;
     top: -5%;
     right: 25%;
-    /* z-index: 3; */
     position: absolute;
     transform: rotateZ(45deg);
     border-radius: 20px;

@@ -16,6 +16,7 @@ function Navbar() {
                     height: "100%",
                     alignItems: "center",
                     marginRight: "20%",
+                    overflow: "visible",
                 }}
             >
                 <div className={styles.navItem}>
@@ -24,10 +25,20 @@ function Navbar() {
 
                 <div className={styles.navItem}>
                     <a>کمپوست</a>
+                    <div className={styles.drop_down}>
+                        <a href="">کمپوست1</a>
+                        <a href="">کمپوست2</a>
+                        <a href="">کمپوست3</a>
+                    </div>
                 </div>
 
                 <div className={styles.navItem}>
                     <a>خاک</a>
+                    <div className={styles.drop_down}>
+                        <a href="">خاک1</a>
+                        <a href="">خاک2</a>
+                        <a href="">خاک3</a>
+                    </div>
                 </div>
 
                 <div className={styles.navItem}>
