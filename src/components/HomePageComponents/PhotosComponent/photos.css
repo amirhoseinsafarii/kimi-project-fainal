@@ -4,8 +4,15 @@
     align-items: center;
     justify-content: space-evenly;
 
-    height: 450px;
+    height: 500px;
     width: 100%;
+    padding-inline: 5%;
+    padding-bottom: 50px;
+}
+
+.photos p {
+    width: 45%;
+    text-align: center;
 }
 
 .photos-components {

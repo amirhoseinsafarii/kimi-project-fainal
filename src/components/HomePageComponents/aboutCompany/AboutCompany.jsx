@@ -20,8 +20,8 @@ function AboutCompany() {
                         <button>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="13"
-                                height="13"
+                                width="15"
+                                height="15"
                                 viewBox="0 0 26 24"
                                 fill="none"
                             >
@@ -75,7 +75,7 @@ function AboutCompany() {
                         <div className="phone-info">
                             <img src={phoneIcon} alt="" />
                             <div className="phone-info-text">
-                                <p>با ما تماس بگیرید</p>
+                                <p>تماس بگیرید</p>
                                 <p>0918 111 1111</p>
                             </div>
                         </div>
@@ -84,8 +84,8 @@ function AboutCompany() {
                             <button className="call">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="24"
+                                    width="15"
+                                    height="15"
                                     viewBox="0 0 26 24"
                                     fill="none"
                                 >
@@ -95,7 +95,7 @@ function AboutCompany() {
                                     />
                                 </svg>
 
-                                <p>تماس با ما</p>
+                                <p>تماس بگیرید</p>
                             </button>
                         </a>
                     </div>

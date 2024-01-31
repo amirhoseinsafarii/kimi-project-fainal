@@ -9,8 +9,10 @@
     overflow: visible;
     padding: 10px;
     padding-bottom: 13px;
-
+    padding-inline: 5%;
     margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 .show {
