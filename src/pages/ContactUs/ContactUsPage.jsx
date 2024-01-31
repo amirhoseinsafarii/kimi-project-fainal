@@ -1,5 +1,5 @@
 import "./ContactUsPage.css";
-import image from "../../assets/Images/photo_2023-09-07_20-01-07.png";
+import image from "../../assets/images/photo_2023-09-07_20-01-07.png";
 
 function ContactUsPage() {
     return (

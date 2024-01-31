@@ -4,11 +4,20 @@
     position: relative;
     direction: rtl;
     margin-right: 10%;
+    overflow: visible;
+    z-index: 1;
 }
 
 .navItem {
-    margin-inline: 15px;
+    margin-inline: 5px;
     cursor: pointer;
+    position: relative;
+    overflow: visible;
+    min-width: 50px;
+    text-align: center;
+    padding: 10px;
+    padding-block: 20px;
+    border-radius: 10px;
 }
 
 .navbar > div:first-of-type {
@@ -19,4 +28,34 @@
 .navbar > div:last-of-type {
     position: absolute;
     left: 7%;
+}
+
+.drop_down {
+    position: absolute;
+    display: none;
+    width: fit-content;
+    padding-right: 10px;
+    color: white;
+
+    right: 0;
+    top: 100%;
+    width: 200px;
+
+    background-color: #4f9468;
+    border-radius: 10px;
+}
+
+.drop_down a {
+    width: 100%;
+    padding-top: 0;
+    margin-block: 10px;
+}
+
+.navItem:hover a + .drop_down,
+.drop_down:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
 }
