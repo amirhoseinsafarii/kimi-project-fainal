@@ -24,6 +24,9 @@ const slider = [
 
 function SliderPart() {
     let [activeSlider, setActiveSlider] = useState(2);
+    function handleSetActiveSlider(number) {
+        setActiveSlider(number);
+    }
     console.log(activeSlider);
     return (
         <div className="sliderPart">
@@ -41,6 +44,8 @@ function SliderPart() {
                         key={v.index}
                         sliderPart={v}
                         active={activeSlider === v.index ? true : false}
+                        handleSetActiveSlider={handleSetActiveSlider}
+                        maxSliderIndex={slider.length - 1}
                     />
                 ))}
 

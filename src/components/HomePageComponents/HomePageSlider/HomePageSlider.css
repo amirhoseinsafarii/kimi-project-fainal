@@ -17,6 +17,7 @@
     justify-content: space-evenly;
     height: fit-content;
     text-align: right;
+    margin-inline: 5%;
 }
 .sliderPart h2 {
     margin-bottom: 5px;

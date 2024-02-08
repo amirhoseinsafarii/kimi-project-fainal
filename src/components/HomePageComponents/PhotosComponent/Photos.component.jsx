@@ -2,6 +2,8 @@ import "./photos.css";
 import { useState, useRef } from "react";
 import image1 from "./../../../assets/images/404.svg";
 import image2 from "./../../../assets/images/Untitled-1-1.png";
+import left from "./../../../assets/images/iconmonstr-arrow-left-circle-lined.svg";
+import right from "./../../../assets/images/iconmonstr-arrow-right-circle-lined.svg";
 
 const photosValue = [
     {
@@ -25,7 +27,6 @@ console.log(photosValue);
 function Photos() {
     let [activeLorem, setActiveLorem] = useState(0);
     const windowSize = useRef([window.innerWidth, window.innerHeight]);
-    console.log(windowSize);
     return (
         <div className="photos">
             <h2>لورم ایپسوم متن ساختگی </h2>
@@ -57,7 +58,7 @@ function Photos() {
                             }
                         }}
                     >
-                        {"<"}
+                        <img src={left} alt="" />
                     </span>
                     {photosValue.map((v, i) => {
                         return (
@@ -81,7 +82,7 @@ function Photos() {
                             }
                         }}
                     >
-                        {">"}
+                        <img src={right} alt="" />
                     </div>
                 </div>
             ) : (
@@ -94,7 +95,7 @@ function Photos() {
                             }
                         }}
                     >
-                        {"<"}
+                        <img src={left} alt="" />
                     </span>
                     {photosValue.map((v, i) => {
                         return (
@@ -117,7 +118,7 @@ function Photos() {
                             }
                         }}
                     >
-                        {">"}
+                        <img src={right} alt="" />
                     </span>
                 </div>
             )}

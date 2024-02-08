@@ -109,20 +109,21 @@
     }
 
     .poster .poster-text {
-        width: 48%;
+        width: 40%;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .poster .poster-text {
-        /* padding-right: 70px; */
-    }
-
     .poster .poster-rectangle {
         width: 350px;
         height: 350px;
         top: -10px;
         right: 17%;
+    }
+
+    .poster .poster-text {
+        right: 5%;
+        width: 39%;
     }
 }
 
@@ -143,14 +144,12 @@
     }
 
     .poster .poster-text {
-        /* padding-right: 30px; */
-
         font-size: 14px;
     }
 
     .poster .poster-text p {
         margin-top: 5px;
-        margin-bottom: 5px;
+        /* margin-bottom: 5px; */
     }
 }
 
@@ -163,22 +162,26 @@
         right: 9%;
         top: -13%;
     }
+
+    .poster .poster-text p {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width: 550px) {
     .poster {
-        height: 60%;
+        height: 500px;
         flex-direction: column;
     }
     .poster img {
         width: 110%;
-        height: 65%;
+        height: 300px;
         object-fit: cover;
     }
 
     .poster .poster-rectangle {
         right: -250px;
-        top: -40px;
+        top: -35px;
         width: 350px;
         height: 350px;
     }
@@ -189,7 +192,10 @@
         position: absolute;
         top: auto;
         bottom: 0;
+        right: 0;
         transform: translateY(0);
+        padding-top: 0;
+        padding-right: 10px;
     }
 }
 
@@ -204,8 +210,12 @@
 
     .poster .poster-text button {
         padding: 5px;
-        height: 40px;
-        width: 120px;
+        height: 32px;
+        width: 95px;
+    }
+
+    .poster .poster-text {
+        align-items: center;
     }
 }
 
@@ -258,6 +268,7 @@
 
 .company-info a button {
     border: #4f9468 2px solid;
+    color: #4f9468;
 }
 
 .company-info-text h2 {
@@ -299,6 +310,13 @@
     .company-info-text {
         width: 90%;
         text-align: center;
+    }
+
+    .company-info > a button {
+        font-size: 12px;
+        padding: 3px;
+        padding-block: 1px;
+        height: 35px;
     }
 }
 
@@ -505,14 +523,18 @@
     }
 
     .about-company-text .phone-info {
-        width: 100%;
+        width: 130px;
     }
 
     .about-company-text .company-telephone-info {
         width: 150px;
     }
     .call {
-        width: 150px;
+        width: 120px;
+    }
+
+    .call p {
+        font-size: 14px;
     }
 }
 
@@ -538,12 +560,12 @@
     }
 
     .company-telephone-info .phone-info p {
-        width: 87px;
+        width: 100px;
     }
 
     .about-company-text .company-telephone-info .call {
-        width: 110px;
-        height: 100%;
+        width: 120px;
+        height: 40px;
         padding: 8px;
     }
 
@@ -571,6 +593,13 @@
 
     .company-image::before {
         left: 230px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-company-text .company-telephone-info .call {
+        width: 110px;
+        height: 35px;
     }
 }
 

@@ -79,7 +79,7 @@
 }
 @media only screen and (max-width: 1000px) {
     .accordians-component {
-        padding-inline: 2%;
+        padding-inline: 5%;
     }
 
     .accordians-component-sidebar {
@@ -98,12 +98,9 @@
         flex-direction: column-reverse;
         align-items: center;
     }
-    .accordians-component {
-        padding: 5px;
-    }
 
     .accordians {
-        width: 80%;
+        width: 95%;
         margin-left: 0;
     }
 
@@ -122,6 +119,7 @@
     .accordians-sidebar {
         width: 45%;
         height: fit-content;
+        padding: 0;
     }
 
     .accordians-sidebar:not(:last-of-type) {
@@ -129,8 +127,8 @@
         margin-bottom: 0;
         border-bottom: none;
         border-left: #c5c5c5 2px solid;
-        margin-left: 5px;
         padding-left: 10px;
+        box-sizing: content-box;
     }
 }
 @media only screen and (max-width: 500px) {
