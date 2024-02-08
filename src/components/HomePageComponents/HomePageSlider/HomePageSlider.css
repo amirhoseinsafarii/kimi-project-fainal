@@ -1,0 +1,84 @@
+.sliderPart {
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background-color: #f1f1f1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: visible;
+}
+
+.slider-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    text-align: right;
+}
+.sliderPart h2 {
+    margin-bottom: 5px;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    min-height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: visible;
+}
+
+.indicators {
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: visible;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #4f9468;
+    margin-inline: 3px;
+
+    border-radius: 50%;
+}
+
+.indicator.active {
+    background-color: #525151;
+    scale: 1.2;
+}
+
+@media only screen and (max-width: 900px) {
+    .slider-text p {
+        font-size: 14px;
+    }
+
+    .slider-text h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sliderPart h2 {
+        font-size: 18px;
+    }
+
+    .slider-text p {
+        font-size: 12px;
+    }
+
+    .indicator {
+        scale: 0.7;
+    }
+
+    .indicator.active {
+        scale: 0.9;
+    }
+}

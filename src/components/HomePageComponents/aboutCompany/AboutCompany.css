@@ -1,0 +1,633 @@
+.poster {
+    height: 345px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    z-index: 0;
+    overflow-y: hidden;
+}
+
+.poster img {
+    height: 100%;
+    width: 65%;
+    /* display: none; */
+}
+
+.poster .poster-rectangle {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    top: -5%;
+    right: 25%;
+    /* z-index: 3; */
+    position: absolute;
+    transform: rotateZ(45deg);
+    border-radius: 20px;
+    overflow: visible;
+}
+
+.poster .poster-rectangle::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px #4f9468 solid;
+    border-left: 5px #4f9468 solid;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: -25px;
+    border-radius: 20px;
+}
+
+.poster .poster-text {
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    z-index: 2;
+    /* padding-right: 5.5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    right: 7.5%;
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.poster-text a {
+    padding: 0;
+    width: fit-content;
+}
+
+.company-info a {
+    padding: 0;
+    width: fit-content;
+}
+
+.company-telephone-info a {
+    padding: 0;
+    width: fit-content;
+}
+
+.poster-text button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4f9468;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.poster .poster-text button {
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+}
+.poster-text button svg {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.poster-text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.poster-text h2 {
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .poster .poster-rectangle {
+        right: 18%;
+    }
+
+    .poster .poster-text {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .poster .poster-text {
+        /* padding-right: 70px; */
+    }
+
+    .poster .poster-rectangle {
+        width: 350px;
+        height: 350px;
+        top: -10px;
+        right: 17%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .poster {
+        height: 35%;
+    }
+
+    .poster img {
+        width: 55%;
+    }
+
+    .poster .poster-rectangle {
+        height: 300px;
+        width: 300px;
+        right: 13%;
+        top: -13%;
+    }
+
+    .poster .poster-text {
+        /* padding-right: 30px; */
+
+        font-size: 14px;
+    }
+
+    .poster .poster-text p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .poster img {
+        width: 60%;
+    }
+
+    .poster .poster-rectangle {
+        right: 9%;
+        top: -13%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .poster {
+        height: 60%;
+        flex-direction: column;
+    }
+    .poster img {
+        width: 110%;
+        height: 65%;
+        object-fit: cover;
+    }
+
+    .poster .poster-rectangle {
+        right: -250px;
+        top: -40px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .poster .poster-text {
+        width: 100%;
+        height: 45%;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .poster .poster-text p {
+        font-size: 13px;
+    }
+
+    .poster .poster-text h2 {
+        font-size: 16px;
+    }
+
+    .poster .poster-text button {
+        padding: 5px;
+        height: 40px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .poster .poster-text p {
+        font-size: 11px;
+        height: fit-content;
+    }
+
+    .poster .poster-text h2 {
+        font-size: 14px;
+    }
+
+    /* .poster .poster-text button {
+        height: 30px;
+        width: 100px;
+    } */
+
+    .poster .poster-rectangle {
+        top: -20px;
+        right: -300px;
+    }
+}
+
+/* About company 2 */
+
+.company-info {
+    width: 100%;
+    padding-inline: 0.8%;
+    height: 185px;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+}
+
+.company-info-text {
+    height: 60%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.company-info a button {
+    border: #4f9468 2px solid;
+}
+
+.company-info-text h2 {
+    color: #4f9468;
+}
+
+.company-info button {
+    background-color: transparent;
+    border-color: #4f9468;
+    border-width: 2px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .company-info-text p {
+        font-size: 14px;
+    }
+
+    .company-info-text h2 {
+        font-size: 18px;
+    }
+
+    .company-info button {
+        height: 40px;
+        padding: 7px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .company-info {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .company-info-text {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* About company 3 */
+
+.about-company {
+    width: 100%;
+    min-height: 400px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: right;
+    overflow: visible;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    padding-inline: 7.5%;
+}
+
+.company-image {
+    aspect-ratio: 1;
+    height: 400px;
+    position: relative;
+    overflow: visible;
+}
+
+.company-image::after {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 105px;
+    left: -20px;
+    z-index: 2;
+}
+
+.company-image::before {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+
+    transform: rotateZ(45deg);
+    position: absolute;
+    left: 260px;
+    bottom: -10px;
+    z-index: 2;
+}
+
+.company-image img {
+    width: 100%;
+    height: 100%;
+    margin-left: -1px;
+    margin-bottom: -3px;
+}
+
+.about-company-text {
+    width: 42%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    direction: rtl;
+}
+
+.about-company-text .texts {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.company-telephone-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+}
+
+.phone-info {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.phone-info .phone-info-text p {
+    background-color: white;
+    margin-left: -1px;
+    font-size: 12px;
+    width: 100px;
+    direction: ltr;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.phone-info img {
+    width: 25px;
+    aspect-ratio: 1;
+}
+
+.call {
+    background-color: #4f9468;
+    color: white;
+
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    direction: ltr;
+}
+
+@media only screen and (max-width: 1100px) {
+    .about-company-text {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .about-company-text {
+        width: 350px;
+    }
+
+    .about-company-text p {
+        font-size: 14px;
+    }
+
+    .about-company-text h2 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .about-company-text {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .about-company {
+        min-height: 500px;
+        flex-direction: column;
+    }
+
+    .company-image {
+        height: 450px;
+    }
+
+    .company-image::after {
+        top: 110px;
+    }
+
+    .company-image::before {
+        left: 300px;
+    }
+
+    .about-company-text {
+        margin-top: 25px;
+        width: 100%;
+        height: 210px;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .about-company-text .texts {
+        padding-right: 10px;
+        width: 75%;
+    }
+
+    .about-company-text .company-telephone-info {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80%;
+        width: 20%;
+        margin-inline: 10px;
+        overflow: visible;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .about-company-text p {
+        font-size: 11px;
+    }
+
+    .about-company-text .texts {
+        width: 65%;
+    }
+
+    .about-company-text .phone-info {
+        width: 100%;
+    }
+
+    .about-company-text .company-telephone-info {
+        width: 150px;
+    }
+    .call {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-company-text .company-telephone-info {
+        margin-inline: 20px;
+        height: 40px;
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .about-company-text .texts {
+        height: 330px;
+    }
+
+    .about-company-text .company-telephone-info {
+        width: 100%;
+    }
+
+    .about-company-text .phone-info {
+        font-size: 10px;
+        width: fit-content;
+    }
+
+    .company-telephone-info .phone-info p {
+        width: 87px;
+    }
+
+    .about-company-text .company-telephone-info .call {
+        width: 110px;
+        height: 100%;
+        padding: 8px;
+    }
+
+    .about-company-text {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px;
+        height: 250px;
+    }
+
+    .about-company-text .texts {
+        width: 95%;
+        height: 200px;
+        font-size: 10px;
+    }
+
+    .company-image {
+        height: 350px;
+    }
+
+    .company-image::after {
+        top: 70px;
+    }
+
+    .company-image::before {
+        left: 230px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .company-telephone-info .phone-info {
+        align-items: center;
+    }
+
+    .about-company-text .company-telephone-info {
+        margin-inline: 10px;
+        height: 50px;
+    }
+
+    .company-telephone-info .phone-info p {
+        font-size: 8px;
+        width: 60px;
+    }
+
+    .company-telephone-info .phone-info img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .about-company-text .company-telephone-info .call {
+        padding-inline: 5px;
+        width: 100px;
+        height: 40px;
+        overflow: visible;
+    }
+    .about-company-text .texts {
+        height: 90%;
+    }
+
+    .about-company-text .company-telephone-info .call svg {
+        width: 15px;
+    }
+
+    .about-company-text .company-telephone-info .call p {
+        font-size: 11px;
+    }
+
+    .company-image {
+        height: 250px;
+    }
+
+    .company-image::after {
+        height: 40px;
+        width: 40px;
+        top: 60px;
+        left: -20px;
+    }
+
+    .company-image::before {
+        height: 40px;
+        width: 40px;
+        left: 160px;
+        bottom: -10px;
+    }
+}
